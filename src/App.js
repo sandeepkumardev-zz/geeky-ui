@@ -1,9 +1,10 @@
 import './App.css';
+import Button from './lib/components/Button';
 
 function App() {
   return (
     <div>
-      Geeky UI
+      <Button label='Button' color='primary' variant='contained' />
     </div>
   );
 }
