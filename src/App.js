@@ -1,11 +1,11 @@
-import './App.css';
-import Button from './lib/components/Button';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Button label='Button' color='primary' variant='contained' />
-    </div>
+    <>
+      Geeky UI
+    </>
   );
 }
 
