@@ -9,7 +9,7 @@
     "geeky",
     "geek"
   ],
-  "version": "0.0.16",
+  "version": "0.0.19",
   "private": false,
   "main": "core/index.js",
   "module": "core/index.js",
