@@ -1,0 +1,93 @@
+.GuiBadge--root {
+    display: inline-flex;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin: 0.8rem;
+}
+
+.GuiBadgeIcon i{
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 2.4rem;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.GuiBadge--badge{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 2rem;
+    min-width: 2rem;
+    padding: 1px 5px;
+    z-index: 1;
+    position: absolute;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.GuiBadge--dot{
+    height: 8px;
+    padding: 0;
+    min-width: 8px;
+    border-radius: 4px;
+    background-color: #000;
+    margin-left: -5px;
+}
+
+.GuiBadge--primary {
+    color: var(--text-white);
+    background-color: var(--primary-light);
+}
+
+.GuiBadge--secondary {
+    color: var(--text-white);
+    background-color: var(--secondary-main);
+}
+
+.GuiBadge--top-left{
+    top: 0;
+    left: 0;
+    transform: scale(1) translate(-50%, -50%);
+    transform-origin: 100% 0%;
+}
+.GuiBadge--top-right{
+    top: 0;
+    right: 0;
+    transform: scale(1) translate(50%, -50%);
+    transform-origin: 100% 0%;
+}
+.GuiBadge--bottom-left{
+    bottom: 0;
+    left: 0;
+    transform: scale(1) translate(-50%, 50%);
+    transform-origin: 100% 0%;
+}
+.GuiBadge--bottom-right{
+    bottom: 0;
+    right: 0;
+    transform: scale(1) translate(50%, 50%);
+    transform-origin: 100% 0%;
+}
+
+.GuiBadge--disabled {
+    color: var(--text-disabled);
+    cursor: default;
+}
+.GuiBadge--disabled .GuiBadge--badge {
+    background-color: var(--text-disabled);;
+}
