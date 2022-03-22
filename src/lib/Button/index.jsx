@@ -9,7 +9,7 @@ const IconLable = styled.span`
     align-items: center;
     gap: 0.5rem;
 `
-function GuiButton({className, ...props}) {
+function GuiButton({className, startIcon, endIcon, ...props}) {
     const buttonClasses = ClassNames('Gui__Button', {
         'Gui__Button--primary': !props.variant && props.color === 'primary',
         'Gui__Button--secondary': !props.variant && props.color === 'secondary',
@@ -33,21 +33,21 @@ function GuiButton({className, ...props}) {
     }, className)
     return (
         <>
-            {props.starticon || props.endicon ?
+            {startIcon || endIcon ?
                 (props.href ?
                     <a className={buttonClasses} href={props.href} {...props}>
-                        {props.starticon ?
-                            <IconLable><i className={props.starticon}></i> {props.children} </IconLable>
+                        {startIcon ?
+                            <IconLable><i className={startIcon}></i> {props.children} </IconLable>
                             :
-                            <IconLable>{props.children} <i className={props.endicon}></i> </IconLable>
+                            <IconLable>{props.children} <i className={endIcon}></i> </IconLable>
                         }
                     </a>
                     :
                     <button className={buttonClasses} {...props}>
-                        {props.starticon ?
-                            <IconLable><i className={props.starticon}></i> {props.children} </IconLable>
+                        {startIcon ?
+                            <IconLable><i className={startIcon}></i> {props.children} </IconLable>
                             :
-                            <IconLable>{props.children} <i className={props.endicon}></i> </IconLable>
+                            <IconLable>{props.children} <i className={endIcon}></i> </IconLable>
                         }
                     </button>
                 )
