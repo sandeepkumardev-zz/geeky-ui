@@ -16,6 +16,7 @@ export const ResetStyles = createGlobalStyle`
     min-height: 100vh;
     font-family: '"Roboto", "Helvetica", "Arial", sans-serif';
     transition: all 0.25s linear;
+    font-size: 1.6rem;
   }
 
   html {
